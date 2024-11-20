@@ -1,14 +1,14 @@
 :root {
   /*--blue: var(--blue);*/
-  --blue: rgba(13,40,128,1);
-  --blue_low_opacity: rgba(13,40,128,0.8);
+  --blue: rgba(17, 148, 98, 0.8);
+  --blue_low_opacity: rgba(17, 148, 98, 0.8);
 }
 
 *{
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   font-weight:500;
   font-size:16px;
-  color:grey;
+  color:white;
 
   text-decoration:none;
 }
@@ -19,7 +19,10 @@ header{
   }
   
 .logo{
-    flex:1; /*https://www.youtube.com/watch?v=k32voqQhODc*/
+    flex:1; 
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
 
 .nav_links{
@@ -37,12 +40,42 @@ header{
   box-sizing:border-box;
   height:40px;
   padding: 10px 15px 0px 15px;
+
 }
 
+
+
+
+button{
+  color: white;
+  background-color: rgb(6, 82, 71);
+  border-radius: 10px;
+  border: none;
+  height: 48px;
+
+  
+  
+
+}
+
+.container.nav{
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  list-style: none;
+  background-color: black;
+  border-radius: 10;
+  height: 100px;
+  align-content: center;
+  justify-content: space-between;
+  padding: 20px;
+}
 
 .nav_links li a:hover, .aktiver_menuelink{
-  color:var(--blue);
+  color:var(aquamarine);
   border-bottom-style: solid;
   border-bottom-width: 5px;
-  border-bottom-color: var(--blue);
+  border-bottom-color: var(aquamarine)
 }
+
