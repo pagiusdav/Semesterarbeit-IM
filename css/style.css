@@ -23,6 +23,7 @@ header{
     margin: 0;
     padding: 0;
     display: inline-block;
+    height: 90px;
 }
 
 .nav_links{
@@ -64,7 +65,7 @@ button{
   height: 100%;
   display: flex;
   list-style: none;
-  background-color: black;
+  background-color: rgb(27, 27, 27);
   border-radius: 10;
   height: 100px;
   align-content: center;
@@ -79,3 +80,15 @@ button{
   border-bottom-color: var(aquamarine)
 }
 
+.aktuelleseite{
+  color: aquamarine;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: var(aquamarine)
+}
+
+.Jobbock_schrift_logo{
+  color: aquamarine;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+}
