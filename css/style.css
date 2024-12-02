@@ -75,12 +75,12 @@ label{
   text-decoration: underline;
 }
 .offen{
-  top: 20px;
+  top: 50px;
   right: 20px;
   cursor: pointer;
 }
 .geschlossen{
-  top: 14px;
+  top: 20px;
   right: 24px;
   position: absolute;
   cursor: pointer;
