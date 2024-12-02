@@ -2,44 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titelseite</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>JobBock</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
 </head>
 <body>
     <header>
-
-    </header>
-
-
-  
-    <nav>
         <nav>
-            <div class="container nav">
-                <li>
-                    <a href="index.html">
-                        <img class="logo" src="img/JobBock_weiss.png" alt="Logo">
-                    </a></li>
-                    <li><a href="index.html"><a class="Jobbock_schrift_logo">JobBock</a>
-
-                    </li>
-                <li><a class="aktuelleseite" href="index.html">Übersicht</a></li>
-                <li><a href="#">Über uns</a></li>
-                <li><a href="#">Wieso JobBock?</a></li>
-                <li><button><a href="#">Anmelden</button></a></li>
-                <li><button><a href="#">App Download</button></a></li>
-            
-            </div>
+            <ul class="navigation">
+                <li class="Ueberschrift"><a href="index.html"><img src="img/JobBock_weiss.png" alt="" class="logo"></a><H1>JobBock</H1></li>
+                
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    
+                    <li><a href="">Über uns</a></li>
+                    <li><a href="">Wieso JobBock?</a></li>                
+                        <li><button class="btn">Anmelden</button></li>
+                        <li><button class="btn">Download</button></li>
+                    <label for="check" class="geschlossen"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="offen"><i class="fas fa-bars"></i></label>
+            </ul>
         </nav>
-    </nav>
-
-    <main>
-    </main>
-
+    </header>
     <footer>
-    </footer>
+        JobBock GmbH<br>
+        <a href="mailto:info@jobbock.ch">info@jobbock.ch</a><br>
+        Tel. +41851234567
+      </footer>
+    
 </body>
 </html>
