@@ -1,173 +1,233 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Allgemeine Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
-  background-color: #f1f1f1;
+body {
+    background-color: #f0f8f3;
+    color: #333;
+    line-height: 1.6;
 }
 
-.logo{
-  height: 60px;
-  width: auto;
-  margin-right: 30px;
-}
-.Ueberschrift{
-  display: flex;
-  flex-direction: row;
-  color: #1DB954;
-  font-size: 30px;
-}
-.Ueberschrift, h1{
-  margin-top: 5px;
+/* Globale Layout-Elemente */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
 }
 
-label{
-  color: #1DB954;
-  font-size: 30px;
+h2 {
+    font-size: 2.5rem;
+    color: #1DB954;
+    margin-bottom: 1rem;
+    position: relative;
 }
 
-.navigation{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 12px 20px;
-  background-color: black;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  width: 100%;
-  height: 80px;
-  z-index: 1000;
-}
-#check {display: none;}
-
-.menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: -100%;
-  background-color: black;
-  z-index: 1000;
-  transition: all 0.2 ease-in-out;
+h2::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: #1DB954;
+    left: 0;
+    bottom: -10px;
 }
 
-.menu li{
-  list-style: none;
-  margin-top: 40px;
-}
-.menu li a{
-  text-decoration: none;
-  color: #1DB954;
-  font-size: 24px;
-  font-weight: 500;
-  padding: 10px;
-  transition: all 0.2s ease-in-out;
-}
-.menu li a:hover{
-  text-decoration: underline;
-}
-.offen{
-  top: 50px;
-  right: 20px;
-  cursor: pointer;
-}
-.geschlossen{
-  top: 20px;
-  right: 24px;
-  position: absolute;
-  cursor: pointer;
-}
-.offen, .geschlossen{
-  display: block;
+/* Abschnitte mit Hintergrund und Formen */
+section {
+    padding: 3rem;
+    margin: 3rem 0;
+    position: relative;
+    overflow: hidden;
 }
 
-#check:checked ~ .menu{
-  right: 0;
-}
-.btn{
-  color: white;
-  background-color: #1DB954;
-  border-radius: 10px;
-  border: none;
-  height: 48px;
-  padding: 10px;
-  width: 150px;
-  cursor: pointer;
-}
-footer{
-  color: #1DB954;
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+.wir, .vision {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-@media (min-width: 1200px) {
+.geschichte, .team {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
 
-  .logo{
-      margin-left: 40px;
-  }
-  .menu{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height: 100%;
-      width: auto;
-      position: relative;
-      top: 0;
-      right: 0;
-      z-index: 1000;
-      transition: all 0.2 ease-in-out;
-  }
-  .menu li{
-      list-style: none;
-      margin-top: 0;
-  }
-  .menu li a{
-      text-decoration: none;
-      color: #1DB954;
-      font-size: 20px;
-      font-weight: 500;
-      margin: 40px;
-      padding: 10px;
-      transition: all 0.2s ease-in-out;
-  }
-  .menu li a:hover{
-      text-decoration: underline;
-  }
-  .offen, .geschlossen{
-      display: none;
-  }
-  .container_button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.intro {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Textblock Layout und Position */
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+}
+
+.content img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+}
+
+/* Formen hinzufügen */
+.wir::after, .geschichte::before, .team::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 188, 212, 0.1);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    z-index: -1;
+}
+
+.geschichte::before {
+    top: -50px;
+    left: 50px;
+}
+
+.team::after {
+    top: -120px;
+    right: -120px;
+}
+
+/* Team-Mitglieder */
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.team-member {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 1.5rem);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.team-member h3 {
+    font-size: 1.3rem;
+    color: #1DB954;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: #888;
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
     }
-    .container_links{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 300px;
+
+    .content {
+        padding: 0 1rem;
     }
-    .btn{
-      color: white;
-      background-color: #1DB954;
-      border-radius: 10px;
-      border: none;
-      height: 48px;
-      margin: 10px;
-      padding: 10px;
-      width: 150px;
+
+    .team-container {
+        justify-content: center;
     }
-  }
+
+    .team-member {
+        width: 45%;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Übergangseffekte für die Sektionen */
+section:hover {
+    background-color: #e0fae3;
+    transition: background-color 0.3s ease;
+}
+
+section:focus-within {
+    background-color: #e0fae3;
+}
+
+/* Buttons und Links */
+a {
+    color: #1DB954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Farbige Akzentuierungen */
+button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1DB954;
+}
