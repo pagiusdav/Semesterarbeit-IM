@@ -6,7 +6,7 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-  background-color: #f1f1f1;
+  background-color: #1c1c1c;
 }
 
 .logo{
@@ -128,9 +128,13 @@ footer{
   background-color: black;
   padding: 10px;
   width: 100%;
-  position: fixed;
+ /* position: fixed;*/
   left: 0;
   bottom: 0;
+}
+
+.aktiveseite {
+  text-decoration: underline;
 }
 
 @media (min-width: 1200px) {
@@ -191,3 +195,5 @@ footer{
       width: 150px;
     }
   }
+
+  
