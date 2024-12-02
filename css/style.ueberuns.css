@@ -1,173 +1,91 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Grundlegende Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center; /* Zentriert den gesamten Text auf der Seite */
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
-  background-color: #f1f1f1;
+main {
+    padding: 40px 10%;
+    background-color:#333 ;
 }
 
-.logo{
-  height: 60px;
-  width: auto;
-  margin-right: 30px;
-}
-.Ueberschrift{
-  display: flex;
-  flex-direction: row;
-  color: #1DB954;
-  font-size: 30px;
-}
-.Ueberschrift, h1{
-  margin-top: 5px;
+h2 {
+    color: #4CAF50; /* Grüner Titel */
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-label{
-  color: #1DB954;
-  font-size: 30px;
+p {
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center; /* Zentriert den Text in den Absätzen */
 }
 
-.navigation{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 12px 20px;
-  background-color: black;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  width: 100%;
-  height: 80px;
-  z-index: 1000;
-}
-#check {display: none;}
-
-.menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: -100%;
-  background-color: black;
-  z-index: 1000;
-  transition: all 0.2 ease-in-out;
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.menu li{
-  list-style: none;
-  margin-top: 40px;
-}
-.menu li a{
-  text-decoration: none;
-  color: #1DB954;
-  font-size: 24px;
-  font-weight: 500;
-  padding: 10px;
-  transition: all 0.2s ease-in-out;
-}
-.menu li a:hover{
-  text-decoration: underline;
-}
-.offen{
-  top: 50px;
-  right: 20px;
-  cursor: pointer;
-}
-.geschlossen{
-  top: 20px;
-  right: 24px;
-  position: absolute;
-  cursor: pointer;
-}
-.offen, .geschlossen{
-  display: block;
+/* Abschnitts-Styling */
+section {
+    margin-bottom: 40px;
 }
 
-#check:checked ~ .menu{
-  right: 0;
-}
-.btn{
-  color: white;
-  background-color: #1DB954;
-  border-radius: 10px;
-  border: none;
-  height: 48px;
-  padding: 10px;
-  width: 150px;
-  cursor: pointer;
-}
-footer{
-  color: #1DB954;
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+/* Team-Mitglieder */
+.team-container {
+    display: flex;
+    justify-content: center; /* Zentriert die Team-Mitglieder horizontal */
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
 }
 
-@media (min-width: 1200px) {
+/* Team-Mitglieder */
+.team-member {
+    text-align: center;
+    flex: 1 1 150px;
+    max-width: 200px;
+}
 
-  .logo{
-      margin-left: 40px;
-  }
-  .menu{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height: 100%;
-      width: auto;
-      position: relative;
-      top: 0;
-      right: 0;
-      z-index: 1000;
-      transition: all 0.2 ease-in-out;
-  }
-  .menu li{
-      list-style: none;
-      margin-top: 0;
-  }
-  .menu li a{
-      text-decoration: none;
-      color: #1DB954;
-      font-size: 20px;
-      font-weight: 500;
-      margin: 40px;
-      padding: 10px;
-      transition: all 0.2s ease-in-out;
-  }
-  .menu li a:hover{
-      text-decoration: underline;
-  }
-  .offen, .geschlossen{
-      display: none;
-  }
-  .container_button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #4CAF50; /* Grüner Rand um Bilder */
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: white;
+}
+
+/* Media Queries für kleinere Bildschirme */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
     }
-    .container_links{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 300px;
+
+    .team-container {
+        justify-content: center;
     }
-    .btn{
-      color: white;
-      background-color: #1DB954;
-      border-radius: 10px;
-      border: none;
-      height: 48px;
-      margin: 10px;
-      padding: 10px;
-      width: 150px;
+
+    .team-member {
+        max-width: 160px;
     }
-  }
+}
