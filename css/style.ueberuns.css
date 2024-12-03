@@ -12,17 +12,17 @@ body {
     line-height: 1.6;
 }
 
-/* Globale Layout-Elemente */
+/* Elemente über die ganze Seite */
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 64px 32px;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 40px;
     color: #1DB954;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     position: relative;
 }
 
@@ -36,15 +36,15 @@ h2::before {
     bottom: -10px;
 }
 
-/* Abschnitte mit Hintergrund und Formen */
+/* Weisse Boxen im Hintergrund & Formen */
 section {
-    padding: 3rem;
-    margin: 3rem 0;
+    padding: 48px;
+    margin: 48px;
     position: relative;
     overflow: hidden;
 }
 
-.wir, .vision {
+.unserstartup, .vision {
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -59,16 +59,16 @@ section {
 
 .section-header {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 .intro {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 18px;
     color: #666;
 }
 
-/* Textblock Layout und Position */
+/* Textblock und Bilder */
 .content {
     max-width: 1100px;
     margin: 0 auto;
@@ -76,24 +76,24 @@ section {
 }
 
 .content p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 .content img {
     width: 100%;
-    border-radius: 12px;
-    margin-top: 1.5rem;
+    border-radius: 20px;
+    margin-top: 24px;
     
     
 }
 
 .imagegruppenbild {
-height: 80px;
+height: 50px;
 width: auto;
 }
 
 /* Formen hinzufügen */
-.wir::after, .geschichte::before, .team::after {
+.unserstartup::after, .geschichte::before, .team::after {
     content: '';
     position: absolute;
     width: 250px;
@@ -119,18 +119,18 @@ width: auto;
 .team-container {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 32px;
     flex-wrap: wrap;
-    margin-top: 3rem;
+    margin-top: 48px;
 }
 
 .team-member {
     background-color: #ffffff;
-    padding: 2rem;
+    padding: 32px;
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: calc(33% - 1.5rem);
+    width: calc(33% - 24px);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
@@ -145,64 +145,17 @@ width: auto;
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 .team-member h3 {
-    font-size: 1.3rem;
+    font-size: 20px;
     color: #1DB954;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .team-member p {
     color: #888;
-}
-
-/* Responsives Design */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 2rem;
-    }
-
-    .content {
-        padding: 0 1rem;
-    }
-
-    .team-container {
-        justify-content: center;
-    }
-
-    .team-member {
-        width: 45%;
-    }
-
-    .team-member img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .team-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .team-member {
-        width: 80%;
-        margin-bottom: 2rem;
-    }
-
-    .team-member img {
-        width: 80px;
-        height: 80px;
-    }
-
-    
 }
 
 /* Übergangseffekte für die Sektionen */
@@ -231,10 +184,10 @@ button {
     background-color: #1DB954;
     color: white;
     border: none;
-    padding: 1rem 2rem;
+    padding: 16px 32px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
@@ -259,23 +212,7 @@ button:hover {
     justify-content: center;
     gap: 8px;
 }
-/*
-.adressfeldtele{ 
-    background-color: #1DB954;
-    height: 50px;
-    text-align: center;
-    border-radius: 2%;
-    opacity: 0.3;
-    text-decoration: underline;
-    margin-bottom: 5px;
-    color: white;
-    display: flex;
-    align-items: center;
-    
-    justify-content: center;
 
-}
-*/
 
 .adressfeld:hover {
     opacity: 100;
@@ -287,5 +224,52 @@ button:hover {
     width: auto;
 
 }
+
+/* Responsives Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    .content {
+        padding: 16px;
+    }
+
+    .team-container {
+        justify-content: center;
+    }
+
+    .team-member {
+        width: 45%;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin-bottom: 32px;
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
 
 
