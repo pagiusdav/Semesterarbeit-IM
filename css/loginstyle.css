@@ -3,15 +3,25 @@
     padding: 12px 20px;
     margin: 8px 0;
 
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 4px 0px;
     border-style: solid;
     border-color: #1DB954;
 
     box-sizing: border-box;
+
+    border-radius: 25px;
 }
 
 .login_form input:focus{
     outline: none;
+}
+
+.cancelbtn {
+    box-shadow: 0 0 7px #f44336;
+}
+
+.Anmeldebtn{
+    box-shadow: 0 0 7px #1DB954;
 }
 
 .login_form button {
@@ -23,8 +33,10 @@
     cursor: pointer;
     width: 100%;
 
-    border-radius: 3px;
+    border-radius: 25px;
+
 }
+
 
 .login_form button:hover {
     opacity: 0.8;
@@ -38,13 +50,23 @@
 
 .login_form .container_benutzerbild {
     text-align: center;
-    margin: -50px;
+    animation: pulse 5s infinite ;
+}
+
+/*definiert die Animation*/
+
+@keyframes pulse {
+    0%, 100% { 
+    transform: scale(1);}
+    50% {
+    transform : scale(1.2);
+    }
+    
 }
 
 .login_form .container{
-    padding: 16px;
-    margin: 40px;
-    width:650px;
+    margin: 10px;
+    width:600px;
 }
 
 .login_form span.psw {
@@ -82,6 +104,11 @@ main{
   }
 
 .Überschrift {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.Angemeldet {
     font-size: 24px;
     font-weight: 500;
 }
