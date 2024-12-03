@@ -1,0 +1,20 @@
+p {
+    text-align: justify;
+    display: flex;
+    margin-top: 50px;
+    padding-left: 180px;
+    padding-right: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: gray;
+}
+
+.Bild_Jobsuche {
+   padding-right: 180px;
+   margin-top: 50px;
+   margin-bottom: 50px;   
+}
