@@ -134,6 +134,17 @@ main{
     color:#1DB954
 }
 
+.footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer_teil{
+    margin: 15px;
+}
+
 @media screen and (max-width: 480px) {
    .container{
     max-width: 300px;
