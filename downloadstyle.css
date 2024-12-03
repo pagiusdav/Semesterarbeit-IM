@@ -1,0 +1,75 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Schwarzer Hintergrund */
+    color: #1DB954; /* Grün wie Spotify */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero, .download-page {
+    padding: 50px 20px;
+}
+
+.download-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* App-Name und andere allgemeine Stile */
+.app-name {
+    font-weight: bold;
+}
+.containerbutton{
+    padding: 10px;
+}
+
+
+
+/* Google Play Store Badge */
+.bn45 {
+    width: 170px;
+    height: 50px;
+    margin: 20px 0; /* Abstand nach oben und unten */
+    display: inline-block; /* In einer Reihe anordnen */
+    transition: transform 0.2s ease;
+}
+
+.bn45:hover {
+    transform: scale(1.1); /* Leichtes Vergrößern beim Hover */
+}
+
+/* Apple App Store Badge */
+.bn46 {
+    width: 170px;
+    height: 50px;
+    margin: 20px 0; /* Abstand nach oben und unten */
+    display: inline-block; /* In einer Reihe anordnen */
+    transition: transform 0.2s ease;
+}
+
+.bn46:hover {
+    transform: scale(1.1); /* Leichtes Vergrößern beim Hover */
+}
+
+/* Logo-Stile für unter den Badges */
+.logo {
+    width: 150px; 
+    height: auto; /* Die Höhe wird automatisch skaliert, damit das Bild proportional bleibt */
+   
+}
+
+
+
