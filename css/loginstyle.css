@@ -92,7 +92,6 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
-    background-color: #1c1c1c;
 }
 
 main{
