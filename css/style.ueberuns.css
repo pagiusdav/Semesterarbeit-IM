@@ -51,7 +51,7 @@ section {
     position: relative;
 }
 
-.geschichte, .team {
+.geschichte, .mitglieder {
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -93,7 +93,7 @@ width: auto;
 }
 
 /* Formen hinzufügen */
-.unserstartup::after, .geschichte::before, .team::after {
+.unserstartup::after, .geschichte::before, .mitglieder::after {
     content: '';
     position: absolute;
     width: 250px;
@@ -110,7 +110,7 @@ width: auto;
     left: 50px;
 }
 
-.team::after {
+.mitglieder::after {
     top: -120px;
     right: -120px;
 }
