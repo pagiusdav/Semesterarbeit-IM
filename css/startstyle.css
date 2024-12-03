@@ -1,3 +1,4 @@
+
 header{
     position: sticky;
     top: 0px;
@@ -20,8 +21,8 @@ header{
 }
 
 
-
 @media (min-width: 1000px) {
+
 
  html {
         scroll-snap-type: y mandatory;
@@ -67,15 +68,48 @@ header{
     padding-left: 400px;
     margin-top: 175px;
 }
-
-
+.team{
+    background: url(/img/team.jpeg) center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    position: relative;
+}
+.team-text{
+    margin-top: 175px;
+}
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
-.bn45 {
-    width: 150px;
+
+.bildauszeichnung{
     height: 50px;
-    margin-top: 40px;
+    margin-right: 20px;
+    top: 0;
+}
+.checked {
+    color: gold;
+    height: 20px;
+    margin-top: 7px;
   }
+  .auszeichungstern{
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .auszeichungstern button{
+    margin-top: 0px;
+    
+  }
+
 }

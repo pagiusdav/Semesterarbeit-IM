@@ -36,7 +36,7 @@
             <form action="/action_page.php" method="post">
 
                 <div class="container_benutzerbild">
-                    <img src="img/JobBock_weiss.png">
+                    <img src="img/JobBock_weiss.png" class="benutzerbild">
                 </div>
 
                 <div class="container">
@@ -46,16 +46,16 @@
                     <label for="psw"><a class="Überschrift">Passwort</a></label>
                     <input type="password" placeholder="Bitte Passwort eingeben" name="psw" id="psw" required>
 
-                    <button type="submit">Anmelden</button>
+                    <button type="submit" class="Anmeldebtn">Anmelden</button>
 
                     <label> 
-                    <input type="checkbox" checked="checked" name="remember"> <a class="Überschrift">Angemeldet bleiben</a>
+                    <input type="checkbox" checked="checked" name="remember"> <a class="Angemeldet">Angemeldet bleiben</a>
                     </label> 
                 </div>
 
                 <div class="container">
                     <button type="button" class="cancelbtn">Abbrechen</button>
-                    <span class="psw"><a href="#">Password vergessen?</a></span>
+                    <span class="psw"><a href="#" class="Password_vergessen">Password vergessen?</a></span>
                 </div>
 
             </form>
