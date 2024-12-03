@@ -1,3 +1,4 @@
+
 header{
     position: sticky;
     top: 0px;
@@ -20,8 +21,8 @@ header{
 }
 
 
-
 @media (min-width: 1000px) {
+
 
  html {
         scroll-snap-type: y mandatory;
@@ -67,8 +68,24 @@ header{
     padding-left: 400px;
     margin-top: 175px;
 }
-
-
+.team{
+    background: url(/img/team.jpeg) center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    position: relative;
+}
+.team-text{
+    margin-top: 175px;
+}
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;

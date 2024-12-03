@@ -10,6 +10,7 @@
     box-sizing: border-box;
 
     border-radius: 25px;
+
 }
 
 .login_form input:focus{
@@ -17,11 +18,13 @@
 }
 
 .cancelbtn {
-    box-shadow: 0 0 7px #f44336;
+    box-shadow: 0 0 10px #f44336;
+    font-size: 15px;
 }
 
-.Anmeldebtn{
-    box-shadow: 0 0 7px #1DB954;
+.Anmeldebtn {
+    box-shadow: 0 0 10px #1DB954;
+    font-size: 15px;
 }
 
 .login_form button {
@@ -53,6 +56,9 @@
     animation: pulse 5s infinite ;
 }
 
+.benutzerbild{
+    margin: 30px;
+}
 /*definiert die Animation*/
 
 @keyframes pulse {
@@ -105,10 +111,35 @@ main{
 
 .Überschrift {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .Angemeldet {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: bold;
 }
+
+.Password_vergessen{
+    color:#1DB954;
+}
+
+.Password_vergessen:visited{
+    color:#1DB954;
+}
+
+.Password_vergessen:hover{
+    opacity:0.8;
+}
+
+.Password_vergessen:active{
+    color:#1DB954
+}
+
+@media screen and (max-width: 480px) {
+   .container{
+    max-width: 300px;
+   }
+   .benutzerbild {
+    max-width: 200vw;
+   }
+ }
