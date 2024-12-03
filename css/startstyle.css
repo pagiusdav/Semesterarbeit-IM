@@ -73,9 +73,26 @@ section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
-.bn45 {
-    width: 150px;
+
+.bildauszeichnung{
     height: 50px;
-    margin-top: 40px;
+    margin-right: 20px;
+    top: 0;
+}
+.checked {
+    color: gold;
+    height: 20px;
+    margin-top: 7px;
   }
+  .auszeichungstern{
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .auszeichungstern button{
+    margin-top: 0px;
+    
+  }
+
 }
