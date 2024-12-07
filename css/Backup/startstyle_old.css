@@ -24,9 +24,7 @@ header{
 @media (min-width: 1000px) {
 
 
- html {
-        scroll-snap-type: y mandatory;
-      }
+ 
 .start{
         background: url(/img/hero.jpg) center/cover no-repeat;
         height: 100vh;
@@ -43,9 +41,7 @@ header{
         position: relative;
  }
 
-.start-text{
-    margin-top: 175px;
-}
+
 
 .rating{
     background: url(/img/rating.jpg) center/cover no-repeat;
@@ -83,13 +79,8 @@ header{
     letter-spacing: 0.5rem;
     position: relative;
 }
-.team-text{
-    margin-top: 175px;
-}
-section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
+
+
 
 .bildauszeichnung{
     height: 50px;

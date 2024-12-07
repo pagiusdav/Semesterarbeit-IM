@@ -92,7 +92,6 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
-    background-color: #1c1c1c;
 }
 
 main{
@@ -133,6 +132,17 @@ main{
 
 .Password_vergessen:active{
     color:#1DB954
+}
+
+.footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer_teil{
+    margin: 15px;
 }
 
 @media screen and (max-width: 480px) {
