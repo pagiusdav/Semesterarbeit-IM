@@ -10,10 +10,11 @@ section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+
 header {
   position: sticky;
   top: 0px;
-  z-index: 1000;
+  z-index: 1100;
 }
 
 body {
@@ -41,6 +42,7 @@ label {
 }
 
 .navigation {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +50,7 @@ label {
   padding: 12px 20px;
   background-color: black;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 80px;
   z-index: 1000;
@@ -71,6 +73,7 @@ label {
   background-color: black;
   z-index: 1000;
   transition: all 0.2 ease-in-out;
+  position: absolute;
 }
 
 .menu li {
@@ -124,22 +127,21 @@ label {
 }
 
 .start {
-  background: url(/img/hero.jpg) center/cover no-repeat;
+  background: url(/img/herohandy.jpg) center/cover no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   color: #fff;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   position: relative;
 }
-.start-text{
-  margin-top: 175px;
-}
+
 footer {
   color: #1DB954;
   text-align: center;
@@ -214,6 +216,7 @@ footer {
 }
 
 @media (min-width: 1200px) {
+
   .logo {
     margin-left: 40px;
   }
@@ -255,13 +258,17 @@ footer {
   }
 
   .btn {
-    color: white;
-    background-color: #1DB954;
-    border-radius: 10px;
-    border: none;
-    height: 48px;
     margin: 10px;
-    padding: 10px;
-    width: 150px;
   }
+    
+  .start {
+    background: url(/img/hero.jpg) center/cover no-repeat;
+    align-items: normal;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .start-text{
+    margin-top: 175px;
+  }
+  
 }
