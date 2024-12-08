@@ -3,13 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-snap-type: y mandatory;
-}
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
 
 header {
   position: sticky;
@@ -126,62 +119,96 @@ label {
   cursor: pointer;
 }
 
+/* Startbild und Text */
 .start {
   background: url(/img/herohandy.jpg) center/cover no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: normal;
   text-align: center;
   color: #fff;
   font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  position: relative;
-}
-
-footer {
-  color: #1DB954;
-  text-align: center;
-  background-color: black;
-  padding: 10px;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-}
-
-.rating {
-  background: url(/img/rating.jpg) center/cover no-repeat;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  color: #fff;
-  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   position: relative;
 }
-
-.rating-text {
-  padding-right: 400px;
-  padding-left: 400px;
+.start-text{
   margin-top: 175px;
+  padding: 10px;
+}
+.start-text h1{
+  margin-bottom: 20px;
+}
+.start-text p{
+  margin-bottom: 20px;
 }
 
+/*Rating Seite*/
+.rating {
+  background: url(/img/ratinghandy.jpg) center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  text-align: center;
+  color: #fff;
+  font-size: 0.90rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  position: relative;
+}
+.rating-text{
+  margin-top: 140px;
+  padding: 20px;
+}
+.rating-text h1{
+  margin-bottom: 20px;
+}
+.rating-text p{
+  margin-bottom: 20px;
+}
+.sterne {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.auszeichungstern {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bildauszeichnung {
+  height: 50px;
+  margin-right: 20px;
+  top: 0;
+}
+.mockup{
+  height: 400px;
+}
+.sterne {
+  margin-bottom: 20px;
+}
+.checked {
+  color: gold;
+  height: 20px;
+  margin-top: 7px;
+}
+
+/*Team Seite*/
 .team {
-  background: url(/img/team.jpeg) center/cover no-repeat;
+  background: url(/img/teamhandy.jpeg) center/cover no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -192,27 +219,21 @@ footer {
   margin-top: 175px;
 }
 
-.bildauszeichnung {
-  height: 50px;
-  margin-right: 20px;
-  top: 0;
+.team-text h1{
+  margin-bottom: 20px;
 }
-
-.checked {
-  color: gold;
-  height: 20px;
-  margin-top: 7px;
+.team-text p{
+  margin-bottom: 20px;
 }
-
-.auszeichungstern {
-  margin-top: 20px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-}
-
-.auszeichungstern button {
-  margin-top: 0px;
+/*Footer*/
+footer {
+  color: #1DB954;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 
 @media (min-width: 1200px) {
@@ -271,4 +292,31 @@ footer {
     margin-top: 175px;
   }
   
+  .rating {
+    background: url(/img/rating.jpg) center/cover no-repeat;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .rating-text {
+    padding-right: 400px;
+    padding-left: 400px;
+    margin-top: 175px;
+  }
+  .auszeichungstern {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+.mockup{
+  display: none;
+}
+.team {
+  background: url(/img/team.jpg) center/cover no-repeat;
+  font-size: 2rem;
+  font-weight: 700;
+}
 }
