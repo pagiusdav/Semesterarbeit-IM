@@ -13,7 +13,7 @@ body {
 }
 
 /* Elemente über die ganze Seite */
-main {
+.ueberuns {
     max-width: 1200px;
     margin: 0 auto;
     padding: 64px 32px;
@@ -37,7 +37,7 @@ h2::before {
 }
 
 /* Weisse Boxen im Hintergrund & Formen */
-section {
+.ueberuns section {
     padding: 48px;
     margin: 48px;
     position: relative;
@@ -227,6 +227,7 @@ button:hover {
 
 /* Responsives Design */
 @media (max-width: 768px) {
+
     h2 {
         font-size: 32px;
     }

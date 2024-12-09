@@ -1,18 +1,23 @@
+:root{
+  --green: #1DB954;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  scroll-snap-type: y mandatory;
+}
 header {
   position: sticky;
   top: 0px;
-  z-index: 1100;
+  z-index: 999999999999999999999;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #1c1c1c;
+  background-color: #333;
 }
 
 .logo {
@@ -24,18 +29,17 @@ body {
 .Ueberschrift {
   display: flex;
   flex-direction: row;
-  color: #1DB954;
+  color: var(--green);
   font-size: 30px;
   margin-top: 5px;
 }
 
 label {
-  color: #1DB954;
+  color: var(--green);
   font-size: 30px;
 }
 
 .navigation {
-  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +50,6 @@ label {
   position: absolute;
   width: 100%;
   height: 80px;
-  z-index: 1000;
 }
 
 #check {
@@ -76,7 +79,7 @@ label {
 
 .menu li a {
   text-decoration: none;
-  color: #1DB954;
+  color: var(--green);
   font-size: 24px;
   font-weight: 500;
   padding: 10px;
@@ -110,13 +113,20 @@ label {
 
 .btn {
   color: white;
-  background-color: #1DB954;
+  background-color: var(--green);
   border-radius: 10px;
   border: none;
   height: 48px;
   padding: 10px;
   width: 150px;
   cursor: pointer;
+}
+
+/*Klasse für die Startseite*/
+
+.startseite section{
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 /* Startbild und Text */
@@ -133,7 +143,6 @@ label {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  position: relative;
 }
 .start-text{
   margin-top: 175px;
@@ -160,7 +169,6 @@ label {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  position: relative;
 }
 .rating-text{
   margin-top: 140px;
@@ -176,6 +184,7 @@ label {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .auszeichungstern {
   display: flex;
@@ -190,9 +199,7 @@ label {
 .mockup{
   height: 400px;
 }
-.sterne {
-  margin-bottom: 20px;
-}
+
 .checked {
   color: gold;
   height: 20px;
@@ -212,11 +219,11 @@ label {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  position: relative;
 }
 
 .team-text {
   margin-top: 175px;
+  position: relative;
 }
 
 .team-text h1{
@@ -227,13 +234,442 @@ label {
 }
 /*Footer*/
 footer {
-  color: #1DB954;
+  color: var(--green);
   text-align: center;
   background-color: black;
   padding: 10px;
   width: 100%;
+  /*
   left: 0;
-  bottom: 0;
+  bottom: 0;*/
+}
+/*Footer ganz unten*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex:1;
+}
+
+/*Login Form*/
+
+.login_form input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+  border-color: var(--green);
+
+  box-sizing: border-box;
+
+  border-radius: 25px;
+
+}
+
+.login_form input:focus{
+  outline: none;
+}
+
+.cancelbtn {
+  box-shadow: 0 0 10px #f44336;
+  font-size: 15px;
+}
+
+.Anmeldebtn {
+  box-shadow: 0 0 10px var(--green);
+  font-size: 15px;
+}
+
+.login_form button {
+  background-color: var(--green);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none; 
+  cursor: pointer;
+  width: 100%;
+
+  border-radius: 25px;
+
+}
+
+.login_form button:hover {
+  opacity: 0.8;
+}
+
+.login_form .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.login_form .container_benutzerbild {
+  text-align: center;
+  animation: pulse 5s infinite ;
+}
+
+.benutzerbild{
+  margin: 30px;
+}
+/*definiert die Animation*/
+
+@keyframes pulse {
+  0%, 100% { 
+  transform: scale(1);}
+  50% {
+  transform : scale(1.2);
+  }
+  
+}
+
+.login_form .container{
+  margin: 10px;
+  width:600px;
+}
+
+.login_form span.psw {
+  float: right; 
+  padding-top: 16px;
+}
+
+.form label{
+  color:var(--green);
+  font-weight: bold;
+}
+
+.login_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+.Überschrift {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Angemeldet {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Password_vergessen{
+  color:var(--green);
+}
+
+.Password_vergessen:visited{
+  color:var(--green);
+}
+
+.Password_vergessen:hover{
+  opacity:0.8;
+}
+
+.Password_vergessen:active{
+  color:var(--green)
+}
+/*Login Form Ende*/
+
+/*Über uns Seite*/
+
+/* Elemente über die ganze Seite */
+.ueberuns {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ueberuns h2 {
+  font-size: 30px;
+  color: var(--green);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.ueberuns h2::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: var(--green);
+  left: 0;
+  bottom: -10px;
+}
+
+/* Weisse Boxen im Hintergrund & Formen */
+.ueberuns section {
+  padding: 48px;
+  margin: 48px 7px;
+  position: relative;
+  overflow: hidden;
+}
+
+.unserstartup, .vision {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.geschichte, .mitglieder {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.intro {
+  font-weight: bold;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Textblock und Bilder */
+.content {
+  max-width: 1100px;
+  padding: 16px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.content p {
+  margin-bottom: 24px;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 24px;
+}
+
+.imagegruppenbild {
+height: 50px;
+width: auto;
+}
+
+/* Formen hinzufügen */
+.unserstartup::after, .geschichte::before, .mitglieder::after {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(0, 188, 212, 0.1);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  z-index: -1;
+}
+
+.geschichte::before {
+  top: -50px;
+  left: 50px;
+}
+
+.mitglieder::after {
+  top: -120px;
+  right: -120px;
+}
+
+/* Team-Mitglieder */
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.team-member {
+  background-color: #ffffff;
+  width: 80%;
+  margin-bottom: 32px;
+  padding: 32px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
+}
+
+.team-member img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.team-member p {
+  color: #888;
+}
+
+/* Übergangseffekte für die Sektionen */
+section:hover {
+  background-color: #e0fae3;
+  transition: background-color 0.3s ease;
+}
+
+section:focus-within {
+  background-color: #e0fae3;
+}
+
+/* Buttons und Links */
+a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Farbige Akzentuierungen */
+button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--green);
+}
+
+.adressfeld{ 
+  background-color: var(--green);
+  height:50px;
+  text-align: center;
+  border-radius: 2%;
+  opacity: 0.3;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+.adressfeld:hover {
+  opacity: 100;
+
+}
+
+.adressfeld img {
+  height: 20px;
+  width: auto;
+
+}
+/*Ueber Uns Ende*/
+
+/*Wieso JobBock Seite*/
+
+.whyseite {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.whyseite h2 {
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+  position: relative
+}
+
+
+/* Abschnitte */
+
+.whyseite section {
+  padding: 3rem;
+  margin: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.whyJobBock {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+  position: relative;
+
+}
+
+/* Textblock Layout und Position */
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.content img {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 20px;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Übergangseffekte für die Sektionen, grüne Linie beim Header */
+
+.whyseite section:hover{
+  background-color: #e0fae3;
+}
+
+.whyseite h2::before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: #1DB954;
+  left: 0;
+  bottom: -10px;
 }
 
 @media (min-width: 1200px) {
@@ -262,7 +698,7 @@ footer {
 
   .menu li a {
     text-decoration: none;
-    color: #1DB954;
+    color: var(--green);
     font-size: 20px;
     font-weight: 500;
     margin: 40px;
@@ -315,8 +751,29 @@ footer {
   display: none;
 }
 .team {
-  background: url(/img/team.jpg) center/cover no-repeat;
+  background: url(/img/team.jpeg) center/cover no-repeat;
   font-size: 2rem;
   font-weight: 700;
+}
+
+/*ueberuns Seite*/
+
+.ueberuns h2 {
+  font-size: 40px;
+}
+.team-container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.team-member {
+  width: calc(33% - 24px);
+}
+.team-member img {
+  width: 120px;
+  height: 120px;
+}
+.adressfeld img {
+  height: 20px;
+  width: auto;
 }
 }
