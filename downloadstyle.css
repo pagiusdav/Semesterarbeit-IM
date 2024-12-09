@@ -1,5 +1,5 @@
 /* Allgemeine Stile */
-body {
+.downloadmain {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,11 +9,11 @@ body {
     text-align: center;
 }
 
-h1 {
+.downloadmain h1 {
     font-size: 2.5rem;
 }
 
-p {
+.downloadmain p {
     font-size: 1.2rem;
     margin: 1rem 0;
     text-shadow: 0 0 5px rgba(29, 185, 84, 0.8), 0 0 10px rgba(29, 185, 84, 0.5);
@@ -69,14 +69,14 @@ p {
 }
 
 /* Logo unter den Badges */
-.logo {
+.logo_download {
     margin-top: 30px;
     width: 150px;
     height: auto; /* Proportional skalieren */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.logo:hover {
+.logo_download:hover {
     transform: scale(1.1) rotate(5deg); /* Leichte Drehung und Vergrösserung */
     opacity: 0.9;
 }

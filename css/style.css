@@ -585,7 +585,6 @@ button:hover {
   gap: 8px;
 }
 
-
 .adressfeld:hover {
   opacity: 100;
 
@@ -593,9 +592,9 @@ button:hover {
 
 .adressfeld img {
   height: 20px;
-  width: auto;
-
+  width: 20px;
 }
+
 /*Ueber Uns Ende*/
 
 /*Wieso JobBock Seite*/
@@ -603,7 +602,7 @@ button:hover {
 .whyseite {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 64px 7px;
 }
 
 .whyseite h2 {
@@ -639,22 +638,7 @@ button:hover {
 
 /* Textblock Layout und Position */
 
-.content {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: justify;
-}
 
-.content img {
-  width: 100%;
-  margin-top: 1.5rem;
-  border-radius: 20px;
-}
-
-.content p {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
 
 /* Übergangseffekte für die Sektionen, grüne Linie beim Header */
 
@@ -667,10 +651,95 @@ button:hover {
   position: absolute;
   width: 50%;
   height: 4px;
-  background-color: #1DB954;
+  background-color: var(--green);
   left: 0;
   bottom: -10px;
 }
+/*Wieso JobBock Ende*/
+
+/*Download Seite*/
+.downloadmain {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("/img/JobBock.png") no-repeat center center fixed;
+  background-size: cover; /* Bild über die gesamte Seite */
+  color: var(--green); 
+  text-align: center;
+}
+
+.downloadmain h1 {
+  font-size: 2.5rem;
+}
+
+.downloadmain p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-shadow: 0 0 5px rgba(29, 185, 84, 0.8), 0 0 10px rgba(29, 185, 84, 0.5);
+}
+
+.download-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Füllt den gesamten Bildschirm aus */
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Schwarzer Overlay für bessere Lesbarkeit */
+  box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5); /* Dunkler Effekt von innen */
+}
+
+/* Download-Buttons und Badges */
+.containerbutton {
+  display: flex;
+  gap: 15px; /* Abstand zwischen den Buttons */
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; /* Abstand nach oben und unten */
+}
+
+.containerbutton a {
+  text-decoration: none;
+}
+
+/* Google Play Store Badge */
+.bn45 {
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.bn45:hover {
+  transform: translateY(-5px);
+ 
+}
+
+/* Apple App Store Badge */
+.bn46 {
+  width: 170px;
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.bn46:hover {
+  transform: translateY(-5px);
+ 
+}
+
+/* Logo unter den Badges */
+.logo_download {
+  margin-top: 30px;
+  width: 150px;
+  height: auto; /* Proportional skalieren */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo_download:hover {
+  transform: scale(1.1) rotate(5deg); /* Leichte Drehung und Vergrösserung */
+  opacity: 0.9;
+}
+/*Ende Download Seite*/
 
 @media (min-width: 1200px) {
 
