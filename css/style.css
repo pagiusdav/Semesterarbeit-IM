@@ -162,7 +162,8 @@ label {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: normal;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: #fff;
   font-size: 0.90rem;
@@ -196,6 +197,7 @@ label {
   margin-right: 20px;
   top: 0;
 }
+
 .mockup{
   height: 400px;
 }
@@ -816,12 +818,23 @@ button:hover {
     font-size: 2rem;
     font-weight: 700;
     text-align: left;
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
 
   .rating-text {
     padding-right: 400px;
-    padding-left: 400px;
+    padding-left: 0px;
     margin-top: 175px;
+  }
+  .mockup{
+    margin-top: 175px;
+    height: 600px;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 100px;
   }
   .auszeichungstern {
     margin-top: 20px;
@@ -829,10 +842,10 @@ button:hover {
     display: flex;
     flex-direction: row;
   }
-
+/*
 .mockup{
   display: none;
-}
+}*/
 .team {
   background: url(/img/team.jpeg) center/cover no-repeat;
   font-size: 2rem;
