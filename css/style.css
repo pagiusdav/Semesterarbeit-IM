@@ -756,6 +756,29 @@ button:hover {
   opacity: 0.9;
 }
 /*Ende Download Seite*/
+@media (min-width: 700px) {
+  .start{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .btn {
+    margin: 10px;
+  }
+  .rating{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .mockup{
+    height: 600px;
+  }
+  .team{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .team-text{
+    padding-top: 175px;
+  }
+}
 
 @media (min-width: 1200px) {
 
@@ -799,15 +822,10 @@ button:hover {
     display: none;
   }
 
-  .btn {
-    margin: 10px;
-  }
-    
+   
   .start {
     background: url(/img/hero.jpg) center/cover no-repeat;
     align-items: normal;
-    font-size: 2rem;
-    font-weight: 700;
   }
   .start-text{
     margin-top: 175px;
@@ -815,8 +833,6 @@ button:hover {
   
   .rating {
     background: url(/img/rating.jpg) center/cover no-repeat;
-    font-size: 2rem;
-    font-weight: 700;
     text-align: left;
     display: flex;
     align-items: normal;
@@ -831,8 +847,6 @@ button:hover {
   }
   .mockup{
     margin-top: 175px;
-    height: 600px;
-    width: auto;
     margin-right: 20px;
     margin-left: 100px;
   }
@@ -842,14 +856,13 @@ button:hover {
     display: flex;
     flex-direction: row;
   }
-/*
-.mockup{
-  display: none;
-}*/
+
 .team {
   background: url(/img/team.jpeg) center/cover no-repeat;
-  font-size: 2rem;
-  font-weight: 700;
+}
+.team-text {
+  margin-top: 175px;
+  padding: 20px;
 }
 
 /*ueberuns Seite*/
@@ -876,4 +889,13 @@ button:hover {
   margin-left: 30px;
   margin-right: 30px;
 }
+}
+/*für Login Form*/
+@media screen and (max-width: 480px) {
+  .container{
+   max-width: 300px;
+  }
+  .benutzerbild {
+   max-width: 200vw;
+  }
 }
