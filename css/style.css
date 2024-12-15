@@ -184,7 +184,7 @@ label {
 .sterne {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 .auszeichungstern {
@@ -244,9 +244,6 @@ footer {
   display: flex;
   justify-content:center;
   align-items: center;
-  /*
-  left: 0;
-  bottom: 0;*/
 }
 
 .footer_teil{
@@ -280,15 +277,11 @@ main {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-
   border-width: 0px 0px 4px 0px;
   border-style: solid;
   border-color: var(--green);
-
   box-sizing: border-box;
-
   border-radius: 25px;
-
 }
 
 .login_form input:focus{
@@ -366,6 +359,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*margin-top: 150px;*/
   height:100vh;
 }
 
