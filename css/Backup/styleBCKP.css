@@ -1,0 +1,901 @@
+:root{
+  --green: #1DB954;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-snap-type: y mandatory;
+}
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 999999999999999999999;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #333;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  margin-right: 30px;
+}
+
+.Ueberschrift {
+  display: flex;
+  flex-direction: row;
+  color: var(--green);
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+label {
+  color: var(--green);
+  font-size: 30px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 12px 20px;
+  background-color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+  height: 80px;
+}
+
+#check {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: black;
+  z-index: 1000;
+  transition: all 0.2 ease-in-out;
+  position: absolute;
+}
+
+.menu li {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--green);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.offen {
+  top: 50px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.geschlossen {
+  top: 20px;
+  right: 24px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.offen, .geschlossen {
+  display: block;
+}
+
+#check:checked ~ .menu {
+  right: 0;
+}
+
+.btn {
+  color: white;
+  background-color: var(--green);
+  border-radius: 10px;
+  border: none;
+  height: 48px;
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+}
+/*Button für die Team Seite*/
+
+.btn-team {
+  color: white;
+  background-color: var(--green);
+  border-radius: 10px;
+  border: none;
+  height: 48px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+/*Klasse für die Startseite*/
+
+.startseite section{
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Startbild und Text */
+.start {
+  background: url(/img/herohandy.jpg) center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.start-text{
+  margin-top: 175px;
+  padding: 10px;
+}
+.start-text h1{
+  margin-bottom: 20px;
+}
+.start-text p{
+  margin-bottom: 20px;
+}
+
+/*Rating Seite*/
+.rating {
+  background: url(/img/ratinghandy.jpg) center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 0.90rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.rating-text{
+  margin-top: 140px;
+  padding: 20px;
+}
+.rating-text h1{
+  margin-bottom: 20px;
+}
+.rating-text p{
+  margin-bottom: 20px;
+}
+.sterne {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.auszeichungstern {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bildauszeichnung {
+  height: 50px;
+  margin-right: 20px;
+  top: 0;
+}
+
+.mockup{
+  height: 300px;
+}
+
+.checked {
+  color: gold;
+  height: 20px;
+  margin-top: 7px;
+}
+
+/*Team Seite*/
+.team {
+  background: url(/img/teamhandy.jpeg) center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.team-text {
+  margin-top: 175px;
+  position: relative;
+}
+
+.team-text h1{
+  margin-bottom: 20px;
+}
+.team-text p{
+  margin-bottom: 20px;
+}
+/*Footer*/
+footer {
+  color: var(--green);
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.footer_teil{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.logo_footer{
+  height: 60px;
+  width: auto;
+}
+
+/*Footer ganz unten*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex:1;
+}
+
+/*Login Form*/
+
+.login_form input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+  border-color: var(--green);
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.login_form input:focus{
+  outline: none;
+}
+
+.cancelbtn {
+  box-shadow: 0 0 10px #f44336;
+  font-size: 15px;
+}
+
+.Anmeldebtn {
+  box-shadow: 0 0 10px var(--green);
+  font-size: 15px;
+}
+
+.login_form button {
+  background-color: var(--green);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none; 
+  cursor: pointer;
+  width: 100%;
+
+  border-radius: 25px;
+
+}
+
+.login_form button:hover {
+  opacity: 0.8;
+}
+
+.login_form .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.login_form .container_benutzerbild {
+  text-align: center;
+  animation: pulse 5s infinite ;
+}
+
+.benutzerbild{
+  margin: 30px;
+}
+/*definiert die Animation*/
+
+@keyframes pulse {
+  0%, 100% { 
+  transform: scale(1);}
+  50% {
+  transform : scale(1.2);
+  }
+  
+}
+
+.login_form .container{
+  margin: 10px;
+  width:600px;
+}
+
+.login_form span.psw {
+  float: right; 
+  padding-top: 16px;
+}
+
+.form label{
+  color:var(--green);
+  font-weight: bold;
+}
+
+.login_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:90vh;
+}
+
+.Überschrift {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Angemeldet {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Password_vergessen{
+  color:var(--green);
+}
+
+.Password_vergessen:visited{
+  color:var(--green);
+}
+
+.Password_vergessen:hover{
+  opacity:0.8;
+}
+
+.Password_vergessen:active{
+  color:var(--green)
+}
+/*Login Form Ende*/
+
+/*Über uns Seite*/
+
+/* Elemente über die ganze Seite */
+.ueberuns {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ueberuns h2 {
+  font-size: 30px;
+  color: var(--green);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.ueberuns h2::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: var(--green);
+  left: 0;
+  bottom: -10px;
+}
+
+/* Weisse Boxen im Hintergrund & Formen */
+.ueberuns section {
+  padding: 48px;
+  margin: 48px 7px;
+  position: relative;
+  overflow: hidden;
+}
+
+.unserstartup, .vision {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.geschichte, .mitglieder {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.intro {
+  font-weight: bold;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Textblock und Bilder */
+.content {
+  max-width: 1100px;
+  padding: 16px;
+  margin: 0 auto;
+  hyphens: auto;
+  text-align: justify;
+}
+
+.content p {
+  margin-bottom: 24px;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 24px;
+}
+
+.imagegruppenbild {
+height: 50px;
+width: auto;
+}
+
+/* Formen hinzufügen */
+.unserstartup::after, .geschichte::before, .mitglieder::after {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(0, 188, 212, 0.1);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  z-index: -1;
+}
+
+.geschichte::before {
+  top: -50px;
+  left: 50px;
+}
+
+.mitglieder::after {
+  top: -120px;
+  right: -120px;
+}
+
+/* Team-Mitglieder */
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.team-member {
+  background-color: #ffffff;
+  width: 80%;
+  margin-bottom: 32px;
+  padding: 32px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
+}
+
+.team-member img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.team-member p {
+  color: #888;
+}
+
+/* Übergangseffekte für die Sektionen */
+section:hover {
+  background-color: #e0fae3;
+  transition: background-color 0.3s ease;
+}
+
+section:focus-within {
+  background-color: #e0fae3;
+}
+
+/* Buttons und Links */
+a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Farbige Akzentuierungen */
+button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--green);
+}
+
+.adressfeld{ 
+  background-color: var(--green);
+  height:50px;
+  text-align: center;
+  border-radius: 2%;
+  opacity: 0.3;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.adressfeld:hover {
+  opacity: 100;
+
+}
+
+.adressfeld img {
+  height: 20px;
+  width: 20px;
+}
+
+/*Ueber Uns Ende*/
+
+/*Wieso JobBock Seite*/
+
+.whyseite {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 7px;
+}
+
+.whyseite h2 {
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+  position: relative
+}
+
+
+/* Abschnitte */
+
+.whyseite section {
+  padding: 3rem;
+  margin: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.whyJobBock {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+  position: relative;
+
+}
+
+/* Textblock Layout und Position */
+
+
+
+/* Übergangseffekte für die Sektionen, grüne Linie beim Header */
+
+.whyseite section:hover{
+  background-color: #e0fae3;
+}
+
+.whyseite h2::before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: var(--green);
+  left: 0;
+  bottom: -10px;
+}
+/*Wieso JobBock Ende*/
+
+/*Download Seite*/
+.downloadmain {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("/img/JobBock.png") no-repeat center center fixed;
+  background-size: cover; /* Bild über die gesamte Seite */
+  color: var(--green); 
+  text-align: center;
+}
+
+.downloadmain h1 {
+  font-size: 2.5rem;
+}
+
+.downloadmain p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-shadow: 0 0 5px rgba(29, 185, 84, 0.8), 0 0 10px rgba(29, 185, 84, 0.5);
+}
+
+.download-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Füllt den gesamten Bildschirm aus */
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Schwarzer Overlay für bessere Lesbarkeit */
+  box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5); /* Dunkler Effekt von innen */
+}
+
+/* Download-Buttons und Badges */
+.containerbutton {
+  display: flex;
+  gap: 15px; /* Abstand zwischen den Buttons */
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; /* Abstand nach oben und unten */
+}
+
+.containerbutton a {
+  text-decoration: none;
+}
+
+/* Google Play Store Badge */
+.bn45 {
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.bn45:hover {
+  transform: translateY(-5px);
+ 
+}
+
+/* Apple App Store Badge */
+.bn46 {
+  width: 170px;
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.bn46:hover {
+  transform: translateY(-5px);
+ 
+}
+
+/* Logo unter den Badges */
+.logo_download {
+  margin-top: 30px;
+  width: 150px;
+  height: auto; /* Proportional skalieren */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo_download:hover {
+  transform: scale(1.1) rotate(5deg); /* Leichte Drehung und Vergrösserung */
+  opacity: 0.9;
+}
+/*Ende Download Seite*/
+@media (min-width: 700px) {
+  .start{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .rating{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .team{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .logo {
+    margin-left: 40px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.2 ease-in-out;
+  }
+
+  .menu li {
+    list-style: none;
+    margin-top: 0;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: var(--green);
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .offen, .geschlossen {
+    display: none;
+  }
+
+   
+  .start {
+    background: url(/img/hero.jpg) center/cover no-repeat;
+    align-items: normal;
+  }
+  .start-text{
+    margin-top: 175px;
+  }
+  
+  .rating {
+    background: url(/img/rating.jpg) center/cover no-repeat;
+    text-align: left;
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .rating-text {
+    padding-right: 400px;
+    padding-left: 0px;
+    margin-top: 175px;
+  }
+  .mockup{
+    margin-top: 175px;
+    margin-right: 20px;
+    margin-left: 100px;
+  }
+  .auszeichungstern {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .mockup{
+    height: 600px;
+  }
+
+  .team {
+    background: url(/img/team.jpeg) center/cover no-repeat;
+  }
+  .team-text {
+    margin-top: 175px;
+    padding: 20px;
+  }
+
+  /*ueberuns Seite*/
+
+  .ueberuns h2 {
+    font-size: 40px;
+  }
+  .team-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .team-member {
+    width: calc(33% - 24px);
+  }
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+  .adressfeld img {
+    height: 20px;
+    width: auto;
+  }
+  .footer_teil{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+/*für Login Form*/
+@media screen and (max-width: 650px) {
+  .container{
+   max-width: 300px;
+  }
+  .benutzerbild {
+   max-width: 200vw;
+  }
+}
